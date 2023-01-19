@@ -88,3 +88,4 @@ Some Common Equivalences
 De Morgan’s Laws
 	(A V B)´ <--> A´ Λ B´	
 	(A Λ B)´ <--> A´ V B´
+
