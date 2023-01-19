@@ -28,7 +28,7 @@ Logical connectives are symbols such as Λ, V, <-->, -->.
 
 Truth Tables
 
-The total number of rows in a truth table for n statement letters is 2pow(n)
+	The total number of rows in a truth table for n statement letters is 2pow(n)
 
 	(A Λ B)
 		A B (A Λ B)
