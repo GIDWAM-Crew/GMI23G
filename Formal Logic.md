@@ -27,41 +27,45 @@ Logical connectives are symbols such as Λ, V, <-->, -->.
 	´ represents NOT (Negation)
 
 Truth Tables
-
 	The total number of rows in a truth table for n statement letters is 2pow(n)
 
-	(A Λ B)
-		A B (A Λ B)
-		T T    T
-		T F    F
-		F T    F
-		F F    F
+##### (A Λ B)
+| **A** | **B** | **(A Λ B)** |
+|:-:|:-:|:-:|
+| T | T | T |
+| T | F | F |
+| F | T | F |
+| F | F | F |
 
-	(A V B)
-		A B (A V B)
-		T T    T
-		T F    T
-		F T    T
-		F F    F
-	
-	(A --> B)      <--->        A´ V B
-		A B (A --> B)            A A´ B (A´ V B)
-		T T     T                T F T      T 
-		T F     F                T F F      F
-		F T     T                F T T      T
-		F F     T                F T F      T
-	
-	(A <--> B)
-		A B (A <--> B)
-		T T      T
-		T F      F
-		F T      F
-		F F      T
+##### (A V B)
+| **A** | **B** | **(A V B)** |
+|:-:|:-:|:-:|
+| T | T | T |
+| T | F | T |
+| F | T | T |
+| F | F | F |
 
-	(A A´)
-		(A A´)
-		  T F
-		  F T
+##### (A --> B)      <--->        A´ V B
+| **A** | **B** | **(A --> B)** |**<------------->**| **A** | **A´** | **B** | **(A´ V B)** |
+|:-:|:-:|:-:|:------------:|:-:|:-:|:-:|:-:|
+| T | T | T |                       | T| F | T | T |
+| T | F | F |                       | T | F | F | F |
+| F | T | T |                       | F | T | T | T |
+| F | F | T |                       | F | T | F | T |
+
+##### (A <--> B)
+| **A** | **B** | **(A <--> B)** |
+|:-:|:-:|:-:|
+| T | T | T |
+| T | F | F |
+| F | T | F |
+| F | F | T |
+
+##### (A A´)
+| **A** | **A´** |
+|:-:|:-:|
+| T | F |
+| F | T |
 
 Equivalences:
 	Two statement forms are called logically equivalent if, and only if, they have identical truth values or each possible substitution of statements for their statement variables.
@@ -88,4 +92,3 @@ Some Common Equivalences
 De Morgan’s Laws
 	(A V B)´ <--> A´ Λ B´	
 	(A Λ B)´ <--> A´ V B´
-
