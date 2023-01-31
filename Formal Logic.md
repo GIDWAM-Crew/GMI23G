@@ -25,6 +25,8 @@ Logical connectives are symbols such as Λ, V, <-->, -->.
 	--> represents IMPLICATION
 	<--> represents EQUIVALENCE
 	´ represents NOT (Negation)
+	
+![[Pasted image 20230125122533.png]]
 
 Truth Tables
 	The total number of rows in a truth table for n statement letters is 2pow(n)
@@ -92,3 +94,6 @@ Some Common Equivalences
 De Morgan’s Laws
 	(A V B)´ <--> A´ Λ B´	
 	(A Λ B)´ <--> A´ V B´
+
+
+![[Pasted image 20230125123239.png]]
